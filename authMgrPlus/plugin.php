@@ -664,7 +664,7 @@ function array_insert($array, $position, $insert_array) {
 
 yourls_add_filter('table_head_cells', 'amp_username_table_head');
 function amp_username_table_head( $cells ) {
-	$user_head = array( 'username' => 'Username' );
+	$user_head = array( 'username' => yourls__( 'Username' ) );
 	$cells = array_insert($cells, 5, $user_head);
 	return $cells;
 }
